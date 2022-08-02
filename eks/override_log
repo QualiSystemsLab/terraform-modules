@@ -1,0 +1,1564 @@
+[2022-07-28 14:38:16,791] [INFO   |  Line 618]:  Trying to preform terraform init & plan in the directory 'C:\work\git\terraform-modules\eks\terraform' in order to check for any validation errors in tf files
+[2022-07-28 14:38:16,814] [ERROR  |  Line 622]:  Exit before the override procedure began because the init/plan failed. (Return_code is 1)
+
+Errors are:
+The system cannot find the path specified.
+
+
+[2022-07-28 14:45:08,553] [INFO   |  Line 618]:  Trying to preform terraform init & plan in the directory 'C:\work\git\terraform-modules\eks\terraform' in order to check for any validation errors in tf files
+[2022-07-28 14:45:49,194] [INFO   |  Line 618]:  Trying to preform terraform init & plan in the directory 'C:\work\git\terraform-modules\eks\terraform' in order to check for any validation errors in tf files
+[2022-07-28 14:54:08,012] [INFO   |  Line 618]:  Trying to preform terraform init & plan in the directory 'C:\work\git\terraform-modules\eks\terraform' in order to check for any validation errors in tf files
+[2022-07-28 14:55:10,253] [INFO   |  Line 629]:  terraform init & plan passed successfully
+[2022-07-28 14:55:13,403] [INFO   |  Line 184]:  Reading torque tags from "C:\work\git\terraform-modules\eks\torque_tags.json"
+[2022-07-28 14:55:13,407] [INFO   |  Line 191]:  Initiate default tags templates
+[2022-07-28 14:55:31,019] [INFO   |  Line 641]:  User decided to exclude the following resources types from tagging: ['aws_autoscaling_group', 'another_type1', 'another_type2']
+[2022-07-28 14:55:31,646] [INFO   |  Line 643]:  ----------------------------------------------------------------------------------------
+[2022-07-28 14:55:34,984] [INFO   |  Line 644]:  Try to create override files to those tf's': [data.tf, eks.tf, outputs.tf, provider.tf, vars.tf, vpc.tf, main.tf, node_groups.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, vpc-endpoints.tf, vpc-flow-logs.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, cloud-watch-logs.tf, main.tf, outputs.tf, s3.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf]
+
+[2022-07-28 14:55:42,438] [INFO   |  Line 563]:  No need to create override file to data.tf (0 resources found in tf)
+[2022-07-28 14:55:52,007] [INFO   |  Line 563]:  No need to create override file to eks.tf (0 resources found in tf)
+[2022-07-28 14:55:52,014] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 14:55:52,022] [INFO   |  Line 563]:  No need to create override file to provider.tf (0 resources found in tf)
+[2022-07-28 14:55:52,029] [INFO   |  Line 563]:  No need to create override file to vars.tf (0 resources found in tf)
+[2022-07-28 14:55:52,038] [INFO   |  Line 563]:  No need to create override file to vpc.tf (0 resources found in tf)
+[2022-07-28 14:55:52,142] [INFO   |  Line 572]:  Override file was created to main.tf (14 resources found in tf)
+[2022-07-28 14:55:52,320] [INFO   |  Line 572]:  Override file was created to node_groups.tf (3 resources found in tf)
+[2022-07-28 14:55:52,359] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 14:55:52,436] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 14:55:52,441] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 14:55:52,495] [INFO   |  Line 572]:  Override file was created to main.tf (1 resources found in tf)
+[2022-07-28 14:55:52,519] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 14:55:52,522] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 14:55:52,527] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 14:55:52,622] [ERROR  |  Line 413]:  An Unhandled exception that started in the line 413 was occurred,
+Exception is:
+Traceback (most recent call last):
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 68, in wrapper
+    return func.__func__(*args, **kwargs)
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 399, in get_terraform_resource_safely
+    if type(tags[0]) is str:
+KeyError: 0
+
+
+
+[2022-07-28 14:55:52,625] [ERROR  |  Line 561]:  An Unhandled exception that started in the line 561 was occurred,
+Exception is:
+Traceback (most recent call last):
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 68, in wrapper
+    return func.__func__(*args, **kwargs)
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 413, in get_tf_file_resources
+    tf_file_resources.append(Hcl2Parser.get_terraform_resource_safely(resource_object))
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 76, in wrapper
+    raise e
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 68, in wrapper
+    return func.__func__(*args, **kwargs)
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 399, in get_terraform_resource_safely
+    if type(tags[0]) is str:
+KeyError: 0
+
+
+
+[2022-07-28 14:57:13,268] [INFO   |  Line 618]:  Trying to preform terraform init & plan in the directory 'C:\work\git\terraform-modules\eks\terraform' in order to check for any validation errors in tf files
+[2022-07-28 14:57:17,307] [ERROR  |  Line 622]:  Exit before the override procedure began because the init/plan failed. (Return_code is 1)
+
+Errors are:
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 3: This character is not used
+within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 13: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 18: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 28: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 33: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 48: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 53: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 58: This character is not
+used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\main_override.tf line 3: Expected the start of an
+expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 13: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 18: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 28: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 33: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 48: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 53: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 58: A comma is required to
+separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 3: This character is
+not used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 8: This character is
+not used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\node_groups_override.tf line 3: Expected the start
+of an expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\node_groups_override.tf line 8: A comma is required
+to separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 3: This character is not used
+within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 13: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 18: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 28: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 33: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 48: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 53: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 58: This character is not
+used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\main_override.tf line 3: Expected the start of an
+expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 13: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 18: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 28: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 33: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 48: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 53: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 58: A comma is required to
+separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 3: This character is
+not used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 8: This character is
+not used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\node_groups_override.tf line 3: Expected the start
+of an expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\node_groups_override.tf line 8: A comma is required
+to separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 3: This character is not used
+within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 13: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 18: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 28: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 33: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 48: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 53: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 58: This character is not
+used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\main_override.tf line 3: Expected the start of an
+expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 13: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 18: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 28: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 33: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 48: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 53: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 58: A comma is required to
+separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 3: This character is
+not used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 8: This character is
+not used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\node_groups_override.tf line 3: Expected the start
+of an expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\node_groups_override.tf line 8: A comma is required
+to separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 3: This character is not used
+within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 13: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 18: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 28: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 33: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 48: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 53: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 58: This character is not
+used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\main_override.tf line 3: Expected the start of an
+expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 13: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 18: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 28: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 33: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 48: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 53: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 58: A comma is required to
+separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 3: This character is
+not used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 8: This character is
+not used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\node_groups_override.tf line 3: Expected the start
+of an expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\node_groups_override.tf line 8: A comma is required
+to separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 3: This character is not used
+within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 13: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 18: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 28: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 33: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 48: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 53: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 58: This character is not
+used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\main_override.tf line 3: Expected the start of an
+expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 13: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 18: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 28: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 33: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 48: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 53: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 58: A comma is required to
+separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 3: This character is
+not used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 8: This character is
+not used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\node_groups_override.tf line 3: Expected the start
+of an expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\node_groups_override.tf line 8: A comma is required
+to separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 3: This character is not used
+within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 13: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 18: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 28: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 33: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 48: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 53: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 58: This character is not
+used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\main_override.tf line 3: Expected the start of an
+expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 13: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 18: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 28: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 33: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 48: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 53: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 58: A comma is required to
+separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 3: This character is
+not used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 8: This character is
+not used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\node_groups_override.tf line 3: Expected the start
+of an expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\node_groups_override.tf line 8: A comma is required
+to separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 3: This character is not used
+within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 13: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 18: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 28: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 33: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 48: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 53: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 58: This character is not
+used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\main_override.tf line 3: Expected the start of an
+expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 13: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 18: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 28: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 33: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 48: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 53: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 58: A comma is required to
+separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 3: This character is
+not used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 8: This character is
+not used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\node_groups_override.tf line 3: Expected the start
+of an expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\node_groups_override.tf line 8: A comma is required
+to separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 3: This character is not used
+within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 13: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 18: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 28: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 33: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 48: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 53: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 58: This character is not
+used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\main_override.tf line 3: Expected the start of an
+expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 13: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 18: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 28: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 33: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 48: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 53: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 58: A comma is required to
+separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 3: This character is
+not used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 8: This character is
+not used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\node_groups_override.tf line 3: Expected the start
+of an expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\node_groups_override.tf line 8: A comma is required
+to separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 3: This character is not used
+within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 13: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 18: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 28: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 33: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 48: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 53: This character is not
+used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\main_override.tf line 58: This character is not
+used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\main_override.tf line 3: Expected the start of an
+expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 13: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 18: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 28: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 33: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 48: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 53: A comma is required to
+separate each function argument from the next.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\main_override.tf line 58: A comma is required to
+separate each function argument from the next.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 3: This character is
+not used within the language.
+
+
+Error: Invalid character
+
+On .terraform\modules\eks\node_groups_override.tf line 8: This character is
+not used within the language.
+
+
+Error: Invalid expression
+
+On .terraform\modules\eks\node_groups_override.tf line 3: Expected the start
+of an expression, but found an invalid expression token.
+
+
+Error: Missing argument separator
+
+On .terraform\modules\eks\node_groups_override.tf line 8: A comma is required
+to separate each function argument from the next.
+
+
+Error: Invalid character
+
+  on .terraform\modules\eks\main_override.tf line 3, in resource "aws_eks_cluster" "this":
+   3:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+This character is not used within the language.
+
+Error: Invalid expression
+
+  on .terraform\modules\eks\main_override.tf line 3, in resource "aws_eks_cluster" "this":
+   3:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+Expected the start of an expression, but found an invalid expression token.
+
+Error: Invalid character
+
+  on .terraform\modules\eks\main_override.tf line 13, in resource "aws_cloudwatch_log_group" "this":
+  13:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+This character is not used within the language.
+
+Error: Missing argument separator
+
+  on .terraform\modules\eks\main_override.tf line 13, in resource "aws_cloudwatch_log_group" "this":
+  13:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+A comma is required to separate each function argument from the next.
+
+Error: Invalid character
+
+  on .terraform\modules\eks\main_override.tf line 18, in resource "aws_security_group" "cluster":
+  18:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+This character is not used within the language.
+
+Error: Missing argument separator
+
+  on .terraform\modules\eks\main_override.tf line 18, in resource "aws_security_group" "cluster":
+  18:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+A comma is required to separate each function argument from the next.
+
+Error: Invalid character
+
+  on .terraform\modules\eks\main_override.tf line 28, in resource "aws_iam_openid_connect_provider" "oidc_provider":
+  28:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+This character is not used within the language.
+
+Error: Missing argument separator
+
+  on .terraform\modules\eks\main_override.tf line 28, in resource "aws_iam_openid_connect_provider" "oidc_provider":
+  28:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+A comma is required to separate each function argument from the next.
+
+Error: Invalid character
+
+  on .terraform\modules\eks\main_override.tf line 33, in resource "aws_iam_role" "this":
+  33:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+This character is not used within the language.
+
+Error: Missing argument separator
+
+  on .terraform\modules\eks\main_override.tf line 33, in resource "aws_iam_role" "this":
+  33:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+A comma is required to separate each function argument from the next.
+
+Error: Invalid character
+
+  on .terraform\modules\eks\main_override.tf line 48, in resource "aws_iam_policy" "cluster_encryption":
+  48:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+This character is not used within the language.
+
+Error: Missing argument separator
+
+  on .terraform\modules\eks\main_override.tf line 48, in resource "aws_iam_policy" "cluster_encryption":
+  48:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+A comma is required to separate each function argument from the next.
+
+Error: Invalid character
+
+  on .terraform\modules\eks\main_override.tf line 53, in resource "aws_eks_addon" "this":
+  53:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+This character is not used within the language.
+
+Error: Missing argument separator
+
+  on .terraform\modules\eks\main_override.tf line 53, in resource "aws_eks_addon" "this":
+  53:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+A comma is required to separate each function argument from the next.
+
+Error: Invalid character
+
+  on .terraform\modules\eks\main_override.tf line 58, in resource "aws_eks_identity_provider_config" "this":
+  58:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+This character is not used within the language.
+
+Error: Missing argument separator
+
+  on .terraform\modules\eks\main_override.tf line 58, in resource "aws_eks_identity_provider_config" "this":
+  58:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+A comma is required to separate each function argument from the next.
+
+Error: Invalid character
+
+  on .terraform\modules\eks\node_groups_override.tf line 3, in resource "aws_iam_policy" "cni_ipv6_policy":
+   3:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+This character is not used within the language.
+
+Error: Invalid expression
+
+  on .terraform\modules\eks\node_groups_override.tf line 3, in resource "aws_iam_policy" "cni_ipv6_policy":
+   3:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+Expected the start of an expression, but found an invalid expression token.
+
+Error: Invalid character
+
+  on .terraform\modules\eks\node_groups_override.tf line 8, in resource "aws_security_group" "node":
+   8:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+This character is not used within the language.
+
+Error: Missing argument separator
+
+  on .terraform\modules\eks\node_groups_override.tf line 8, in resource "aws_security_group" "node":
+   8:     tags = merge($, tomap({"tag1"="value1" , "tag2"="value2"}))
+
+A comma is required to separate each function argument from the next.
+
+
+[2022-07-28 15:04:23,865] [INFO   |  Line 618]:  Trying to preform terraform init & plan in the directory 'C:\work\git\terraform-modules\eks\terraform' in order to check for any validation errors in tf files
+[2022-07-28 15:07:39,914] [INFO   |  Line 618]:  Trying to preform terraform init & plan in the directory 'C:\work\git\terraform-modules\eks\terraform' in order to check for any validation errors in tf files
+[2022-07-28 15:08:15,520] [INFO   |  Line 618]:  Trying to preform terraform init & plan in the directory 'C:\work\git\terraform-modules\eks\terraform' in order to check for any validation errors in tf files
+[2022-07-28 15:09:13,018] [INFO   |  Line 629]:  terraform init & plan passed successfully
+[2022-07-28 15:09:13,023] [INFO   |  Line 184]:  Reading torque tags from "C:\work\git\terraform-modules\eks\torque_tags.json"
+[2022-07-28 15:09:13,029] [INFO   |  Line 191]:  Initiate default tags templates
+[2022-07-28 15:09:13,056] [INFO   |  Line 641]:  User decided to exclude the following resources types from tagging: ['aws_autoscaling_group', 'another_type1', 'another_type2']
+[2022-07-28 15:09:13,059] [INFO   |  Line 643]:  ----------------------------------------------------------------------------------------
+[2022-07-28 15:09:13,062] [INFO   |  Line 644]:  Try to create override files to those tf's': [data.tf, eks.tf, outputs.tf, provider.tf, vars.tf, vpc.tf, main.tf, node_groups.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, vpc-endpoints.tf, vpc-flow-logs.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, cloud-watch-logs.tf, main.tf, outputs.tf, s3.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf]
+
+[2022-07-28 15:09:18,231] [INFO   |  Line 563]:  No need to create override file to data.tf (0 resources found in tf)
+[2022-07-28 15:09:23,275] [INFO   |  Line 563]:  No need to create override file to eks.tf (0 resources found in tf)
+[2022-07-28 15:09:23,283] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:09:23,292] [INFO   |  Line 563]:  No need to create override file to provider.tf (0 resources found in tf)
+[2022-07-28 15:09:23,301] [INFO   |  Line 563]:  No need to create override file to vars.tf (0 resources found in tf)
+[2022-07-28 15:09:23,312] [INFO   |  Line 563]:  No need to create override file to vpc.tf (0 resources found in tf)
+[2022-07-28 15:09:23,438] [INFO   |  Line 572]:  Override file was created to main.tf (14 resources found in tf)
+[2022-07-28 15:09:23,619] [INFO   |  Line 572]:  Override file was created to node_groups.tf (3 resources found in tf)
+[2022-07-28 15:09:23,661] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:09:23,735] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:09:23,741] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:09:23,797] [INFO   |  Line 572]:  Override file was created to main.tf (1 resources found in tf)
+[2022-07-28 15:09:23,822] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:09:23,825] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:09:23,830] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:09:23,947] [ERROR  |  Line 413]:  An Unhandled exception that started in the line 413 was occurred,
+Exception is:
+Traceback (most recent call last):
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 68, in wrapper
+    return func.__func__(*args, **kwargs)
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 399, in get_terraform_resource_safely
+    if type(tags[0]) is str:
+KeyError: 0
+
+
+
+[2022-07-28 15:09:23,950] [ERROR  |  Line 561]:  An Unhandled exception that started in the line 561 was occurred,
+Exception is:
+Traceback (most recent call last):
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 68, in wrapper
+    return func.__func__(*args, **kwargs)
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 413, in get_tf_file_resources
+    tf_file_resources.append(Hcl2Parser.get_terraform_resource_safely(resource_object))
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 76, in wrapper
+    raise e
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 68, in wrapper
+    return func.__func__(*args, **kwargs)
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 399, in get_terraform_resource_safely
+    if type(tags[0]) is str:
+KeyError: 0
+
+
+
+[2022-07-28 15:17:41,010] [INFO   |  Line 618]:  Trying to preform terraform init & plan in the directory 'C:\work\git\terraform-modules\eks\terraform' in order to check for any validation errors in tf files
+[2022-07-28 15:18:32,158] [INFO   |  Line 629]:  terraform init & plan passed successfully
+[2022-07-28 15:18:32,164] [INFO   |  Line 184]:  Reading torque tags from "C:\work\git\terraform-modules\eks\torque_tags.json"
+[2022-07-28 15:18:32,173] [INFO   |  Line 191]:  Initiate default tags templates
+[2022-07-28 15:18:32,203] [INFO   |  Line 641]:  User decided to exclude the following resources types from tagging: ['aws_autoscaling_group', 'another_type1', 'another_type2']
+[2022-07-28 15:18:32,206] [INFO   |  Line 643]:  ----------------------------------------------------------------------------------------
+[2022-07-28 15:18:33,779] [INFO   |  Line 644]:  Try to create override files to those tf's': [data.tf, eks.tf, outputs.tf, provider.tf, vars.tf, vpc.tf, main.tf, node_groups.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, vpc-endpoints.tf, vpc-flow-logs.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, cloud-watch-logs.tf, main.tf, outputs.tf, s3.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf]
+
+[2022-07-28 15:18:33,805] [INFO   |  Line 563]:  No need to create override file to data.tf (0 resources found in tf)
+[2022-07-28 15:18:33,814] [INFO   |  Line 563]:  No need to create override file to eks.tf (0 resources found in tf)
+[2022-07-28 15:18:33,821] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:33,828] [INFO   |  Line 563]:  No need to create override file to provider.tf (0 resources found in tf)
+[2022-07-28 15:18:33,836] [INFO   |  Line 563]:  No need to create override file to vars.tf (0 resources found in tf)
+[2022-07-28 15:18:33,844] [INFO   |  Line 563]:  No need to create override file to vpc.tf (0 resources found in tf)
+[2022-07-28 15:18:33,944] [INFO   |  Line 572]:  Override file was created to main.tf (14 resources found in tf)
+[2022-07-28 15:18:34,132] [INFO   |  Line 572]:  Override file was created to node_groups.tf (3 resources found in tf)
+[2022-07-28 15:18:34,171] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:34,245] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:34,251] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:34,307] [INFO   |  Line 572]:  Override file was created to main.tf (1 resources found in tf)
+[2022-07-28 15:18:34,333] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:34,336] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:34,341] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:34,436] [INFO   |  Line 572]:  Override file was created to main.tf (10 resources found in tf)
+[2022-07-28 15:18:34,462] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:34,465] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:34,471] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:34,496] [INFO   |  Line 572]:  Override file was created to main.tf (1 resources found in tf)
+[2022-07-28 15:18:34,523] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:34,526] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:34,531] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:34,564] [INFO   |  Line 572]:  Override file was created to main.tf (4 resources found in tf)
+[2022-07-28 15:18:34,589] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:34,592] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:34,597] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:34,663] [INFO   |  Line 572]:  Override file was created to main.tf (6 resources found in tf)
+[2022-07-28 15:18:34,690] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:34,694] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:34,700] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:34,733] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 15:18:34,751] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:34,754] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:34,759] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:34,864] [INFO   |  Line 572]:  Override file was created to main.tf (6 resources found in tf)
+[2022-07-28 15:18:34,883] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:34,949] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:34,954] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:34,974] [INFO   |  Line 572]:  Override file was created to main.tf (3 resources found in tf)
+[2022-07-28 15:18:34,985] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:35,003] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:35,007] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:35,143] [INFO   |  Line 572]:  Override file was created to main.tf (8 resources found in tf)
+[2022-07-28 15:18:35,173] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:35,253] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:35,257] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:35,277] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 15:18:35,282] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:35,294] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:35,298] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:35,349] [INFO   |  Line 572]:  Override file was created to main.tf (4 resources found in tf)
+[2022-07-28 15:18:35,365] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:35,398] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:35,402] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:35,422] [INFO   |  Line 572]:  Override file was created to main.tf (1 resources found in tf)
+[2022-07-28 15:18:35,443] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 15:18:35,446] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 15:18:35,451] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 15:18:35,456] [ERROR  |  Line 411]:  An Unhandled exception that started in the line 411 was occurred,
+Exception is:
+Traceback (most recent call last):
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 68, in wrapper
+    return func.__func__(*args, **kwargs)
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 373, in get_tf_file_as_dict
+    return hcl2.load(client_tf_file)
+  File "C:\Python38\lib\site-packages\hcl2\api.py", line 9, in load
+    return loads(file.read())
+  File "C:\Python38\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 5007: character maps to <undefined>
+
+
+
+[2022-07-28 15:18:35,460] [ERROR  |  Line 561]:  An Unhandled exception that started in the line 561 was occurred,
+Exception is:
+Traceback (most recent call last):
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 68, in wrapper
+    return func.__func__(*args, **kwargs)
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 411, in get_tf_file_resources
+    tf_as_dict = Hcl2Parser.get_tf_file_as_dict(tf_file_path)
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 76, in wrapper
+    raise e
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 68, in wrapper
+    return func.__func__(*args, **kwargs)
+  File "C:/work/git/cs2018/providers/scripts/terraform/tag_terraform_resources.py", line 373, in get_tf_file_as_dict
+    return hcl2.load(client_tf_file)
+  File "C:\Python38\lib\site-packages\hcl2\api.py", line 9, in load
+    return loads(file.read())
+  File "C:\Python38\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 5007: character maps to <undefined>
+
+
+
+[2022-07-28 17:53:20,075] [INFO   |  Line 618]:  Trying to preform terraform init & plan in the directory 'C:\work\git\terraform-modules\eks\terraform' in order to check for any validation errors in tf files
+[2022-07-28 18:07:55,123] [INFO   |  Line 629]:  terraform init & plan passed successfully
+[2022-07-28 18:07:59,666] [INFO   |  Line 184]:  Reading torque tags from "C:\work\git\terraform-modules\eks\torque_tags.json"
+[2022-07-28 18:07:59,671] [INFO   |  Line 191]:  Initiate default tags templates
+[2022-07-28 18:07:59,703] [INFO   |  Line 641]:  User decided to exclude the following resources types from tagging: ['aws_autoscaling_group', 'another_type1', 'another_type2']
+[2022-07-28 18:07:59,705] [INFO   |  Line 643]:  ----------------------------------------------------------------------------------------
+[2022-07-28 18:08:06,640] [INFO   |  Line 644]:  Try to create override files to those tf's': [data.tf, eks.tf, outputs.tf, provider.tf, vars.tf, vpc.tf, main.tf, node_groups.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, vpc-endpoints.tf, vpc-flow-logs.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf, cloud-watch-logs.tf, main.tf, outputs.tf, s3.tf, variables.tf, versions.tf, main.tf, outputs.tf, variables.tf, versions.tf]
+
+[2022-07-28 18:08:06,662] [INFO   |  Line 563]:  No need to create override file to data.tf (0 resources found in tf)
+[2022-07-28 18:08:06,671] [INFO   |  Line 563]:  No need to create override file to eks.tf (0 resources found in tf)
+[2022-07-28 18:08:06,678] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:06,685] [INFO   |  Line 563]:  No need to create override file to provider.tf (0 resources found in tf)
+[2022-07-28 18:08:06,693] [INFO   |  Line 563]:  No need to create override file to vars.tf (0 resources found in tf)
+[2022-07-28 18:08:06,701] [INFO   |  Line 563]:  No need to create override file to vpc.tf (0 resources found in tf)
+[2022-07-28 18:08:06,806] [INFO   |  Line 572]:  Override file was created to main.tf (14 resources found in tf)
+[2022-07-28 18:08:07,020] [INFO   |  Line 572]:  Override file was created to node_groups.tf (3 resources found in tf)
+[2022-07-28 18:08:07,068] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:07,156] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:07,161] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:07,231] [INFO   |  Line 572]:  Override file was created to main.tf (1 resources found in tf)
+[2022-07-28 18:08:07,268] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:07,271] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:07,276] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:07,373] [INFO   |  Line 572]:  Override file was created to main.tf (10 resources found in tf)
+[2022-07-28 18:08:07,401] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:07,404] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:07,410] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:07,435] [INFO   |  Line 572]:  Override file was created to main.tf (1 resources found in tf)
+[2022-07-28 18:08:07,464] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:07,467] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:07,472] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:07,506] [INFO   |  Line 572]:  Override file was created to main.tf (4 resources found in tf)
+[2022-07-28 18:08:07,531] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:07,536] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:07,541] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:07,620] [INFO   |  Line 572]:  Override file was created to main.tf (6 resources found in tf)
+[2022-07-28 18:08:07,652] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:07,658] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:07,665] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:07,699] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:07,717] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:07,721] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:07,725] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:07,843] [INFO   |  Line 572]:  Override file was created to main.tf (6 resources found in tf)
+[2022-07-28 18:08:07,869] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:07,950] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:07,954] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:07,976] [INFO   |  Line 572]:  Override file was created to main.tf (3 resources found in tf)
+[2022-07-28 18:08:07,987] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:08,018] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:08,025] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:08,178] [INFO   |  Line 572]:  Override file was created to main.tf (8 resources found in tf)
+[2022-07-28 18:08:08,216] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:08,308] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:08,312] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:08,334] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:08,338] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:08,351] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:08,355] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:08,414] [INFO   |  Line 572]:  Override file was created to main.tf (4 resources found in tf)
+[2022-07-28 18:08:08,426] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:08,454] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:08,459] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:08,479] [INFO   |  Line 572]:  Override file was created to main.tf (1 resources found in tf)
+[2022-07-28 18:08:08,506] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:08,510] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:08,518] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:08,916] [INFO   |  Line 572]:  Override file was created to main.tf (64 resources found in tf)
+[2022-07-28 18:08:09,212] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:09,627] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:09,631] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:09,979] [INFO   |  Line 572]:  Override file was created to vpc-endpoints.tf (73 resources found in tf)
+[2022-07-28 18:08:10,012] [INFO   |  Line 572]:  Override file was created to vpc-flow-logs.tf (5 resources found in tf)
+[2022-07-28 18:08:10,038] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:10,053] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:10,056] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:10,060] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:10,070] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:10,076] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:10,079] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:10,083] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:10,090] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:10,098] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:10,101] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:10,105] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:10,112] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:10,120] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:10,123] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:10,127] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:10,134] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:10,142] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:10,145] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:10,149] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:10,154] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:10,159] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:10,162] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:10,166] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:10,203] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:10,216] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:10,219] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:10,223] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:10,233] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:10,241] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:10,245] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:10,249] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:10,256] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:10,265] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:10,268] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:10,272] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:10,288] [INFO   |  Line 572]:  Override file was created to cloud-watch-logs.tf (4 resources found in tf)
+[2022-07-28 18:08:10,294] [INFO   |  Line 572]:  Override file was created to main.tf (1 resources found in tf)
+[2022-07-28 18:08:10,305] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:10,317] [INFO   |  Line 563]:  No need to create override file to s3.tf (0 resources found in tf)
+[2022-07-28 18:08:10,321] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:10,325] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:08:10,334] [INFO   |  Line 563]:  No need to create override file to main.tf (0 resources found in tf)
+[2022-07-28 18:08:10,344] [INFO   |  Line 563]:  No need to create override file to outputs.tf (0 resources found in tf)
+[2022-07-28 18:08:10,347] [INFO   |  Line 563]:  No need to create override file to variables.tf (0 resources found in tf)
+[2022-07-28 18:08:10,351] [INFO   |  Line 563]:  No need to create override file to versions.tf (0 resources found in tf)
+[2022-07-28 18:09:11,520] [INFO   |  Line 649]:  ----------------------------------------------------------------------------------------
+[2022-07-28 18:09:12,039] [INFO   |  Line 651]:  Trying to preform terraform init & plan in the directory 'C:\work\git\terraform-modules\eks\terraform' in order to check for any untaggable resources in the override files
+[2022-07-28 18:09:22,464] [INFO   |  Line 658]:  Checking for any errors in plan output
