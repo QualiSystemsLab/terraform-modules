@@ -2,7 +2,7 @@ resource "aws_lb" "test" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.ALBSG.id]
-  subnets = var.subnets
+  subnets = split(",", var.subnets) 
 }
 
 resource "aws_lb_listener" "web" {
