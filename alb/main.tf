@@ -7,7 +7,7 @@ resource "aws_lb" "test" {
 
 resource "aws_lb_listener" "web" {
   load_balancer_arn = aws_lb.test.arn
-  port              = var.application_port
+  port              = var.listener_port
   protocol          = "HTTP"
 
   default_action {

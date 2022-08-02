@@ -1,3 +1,7 @@
+variable "region" {
+
+}
+
 variable "vpc" {
     description = "VPC ID"
 }
@@ -9,6 +13,10 @@ variable "allowed_cidr" {
 
 variable "application_port" {
     //default = 80
+}
+
+variable "listener_port" {
+  
 }
 
 variable "subnets" {
