@@ -27,6 +27,6 @@ variable "subnets" {
     description = "list of subnet ids"
 }
 
-variable "instance_id" {
-    description = "ID of the EC2 instance to recieve trafic"  
+variable "instance_ids" {
+    description = "Comma separated list of IDs of the EC2 instance to recieve trafic"  
 }
