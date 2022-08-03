@@ -1,3 +1,3 @@
 output "endpoint" {
-    value = "${aws_lb.test.dns_name}:${var.application_port}"
+    value = "${aws_lb.alb.dns_name}:${var.application_port}"
 }
