@@ -41,7 +41,7 @@ locals {
 }
 
 resource "aws_lb_target_group_attachment" "alb_attachment" {
-  count = lenght(local.instance_id_list)
+  count = length(local.instance_id_list)
   target_group_arn = aws_lb_target_group.instances.arn
   target_id        = local.instance_id_list[count.index]
   port             = var.application_port
