@@ -9,10 +9,10 @@ resource "aws_security_group" "ALBSG" {
     }
     ingress {
         cidr_blocks = [var.allowed_cidr]
-        description = "application port access"
-        from_port = var.application_port
+        description = "listener port access"
+        from_port = var.listener_port
+        to_port = var.listener_port
         protocol = "tcp"
-        to_port = var.application_port
         ipv6_cidr_blocks = []
         prefix_list_ids = []
         security_groups = []
