@@ -17,7 +17,7 @@ resource "aws_lb_listener" "web" {
 }
 
 resource "aws_lb_target_group" "instances" {
-  name = "alb-${var.sandbox_id}"
+  # name = "alb-${var.sandbox_id}" 
   target_type = "instance"
   port        = var.application_port
   protocol    = "HTTP"
