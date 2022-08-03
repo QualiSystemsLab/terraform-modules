@@ -1,3 +1,7 @@
+variable "sandbox_id" {
+  
+}
+
 variable "region" {
 
 }

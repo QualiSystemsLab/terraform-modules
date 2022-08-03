@@ -1,4 +1,4 @@
-resource "aws_lb" "test" {
+resource "aws_lb" "alb" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.ALBSG.id]
@@ -6,7 +6,7 @@ resource "aws_lb" "test" {
 }
 
 resource "aws_lb_listener" "web" {
-  load_balancer_arn = aws_lb.test.arn
+  load_balancer_arn = aws_lb.alb.arn
   port              = var.listener_port
   protocol          = "HTTP"
 
@@ -17,7 +17,7 @@ resource "aws_lb_listener" "web" {
 }
 
 resource "aws_lb_target_group" "instances" {
-  name = "alb"
+  name = "alb-${var.sandbox_id}"
   target_type = "instance"
   port        = var.application_port
   protocol    = "HTTP"
@@ -35,7 +35,7 @@ resource "aws_lb_target_group" "instances" {
 
 }
 
-resource "aws_lb_target_group_attachment" "test" {
+resource "aws_lb_target_group_attachment" "alb_attachment" {
   target_group_arn = aws_lb_target_group.instances.arn
   target_id        = var.instance_id
   port             = var.application_port
