@@ -1,5 +1,5 @@
 resource "aws_security_group" "ALBSG" {
-    name = "alb"
+    name = "alb-${var.sandbox_id}"
     egress {
         from_port        = 0
         to_port          = 0
@@ -19,6 +19,6 @@ resource "aws_security_group" "ALBSG" {
         self = false
     }
 
-tags = {"Key": "Name","Value": "ALBSG"}
-vpc_id = var.vpc
+    tags = {"Key": "Name","Value": "ALBSG"}
+    vpc_id = var.vpc
 }
