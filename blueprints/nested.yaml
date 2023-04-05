@@ -1,0 +1,25 @@
+spec_version: 2
+description: 
+
+inputs:
+  host_name:
+    type: agent
+  sleep_time:
+    type: string
+
+outputs: {}
+
+grains:
+  dummy_sleep_git:
+    kind: blueprint
+    spec:
+      source:
+        store: terraform-modules
+        path: blueprints/dummy_sleep_git
+      agent:      
+        name: '{{ .inputs.host_name }}'
+      inputs:
+        - host_name: '{{ .inputs.host_name }}'
+        - sleep: '{{ .inputs.sleep_time }}'      
+      env-vars: []
+      outputs: []
