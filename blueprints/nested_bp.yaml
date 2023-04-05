@@ -20,6 +20,6 @@ grains:
         name: '{{ .inputs.host_name }}'
       inputs:
         - host_name: '{{ .inputs.host_name }}'
-        - sleep: '{{ .inputs.sleep_times }}'      
+        - sleep: '{{ .inputs.sleep_time }}'      
       env-vars: []
       outputs: []
