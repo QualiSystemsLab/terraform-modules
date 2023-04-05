@@ -9,9 +9,8 @@ inputs:
 
 outputs: {}
 
-
 grains:
-  dummy_sleep_git:
+  dummy_sleep_test:
     kind: blueprint
     spec:
       source:
