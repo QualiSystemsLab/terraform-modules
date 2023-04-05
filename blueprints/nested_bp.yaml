@@ -15,7 +15,7 @@ grains:
     spec:
       source:
         store: terraform-modules
-        path: blueprints/dummy_sleep_git
+        path: blueprints/dummy_sleep_test
       agent:      
         name: '{{ .inputs.host_name }}'
       inputs:
