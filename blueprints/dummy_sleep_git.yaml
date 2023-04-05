@@ -1,0 +1,26 @@
+spec_version: 2
+description: 
+
+inputs:
+  host_name:
+    type: agent
+  sleep:
+    type: string    
+    
+outputs: {}
+
+grains:
+  dummy_sleep:
+    kind: terraform
+    spec:
+      source:
+        store: terraform-modules
+        path: sleep
+      agent:      
+        name: '{{ .inputs.host_name }}'
+      inputs:
+        - sleep: '{{ .inputs.sleep }}'      
+      env-vars: []
+      outputs: []      
+    # The terraform version that will be used to deploy the module
+    tf-version: 1.4.4
